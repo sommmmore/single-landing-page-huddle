@@ -1,0 +1,130 @@
+/* Colour variables */
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/* Global Declarations */
+body{
+    background-color: var(--violet);
+    background-image: url(./images/bg-desktop.svg);
+    padding: 2% 5% 0;
+    color: white;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Header Section */
+header img{
+    width: 220px;
+}
+
+/* Main Content Section */
+.main-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 0.8fr;
+    padding: 3rem 0 0 0;
+}
+
+.main-illustration{
+    width: 100%;
+    min-width: 650px;
+    max-width: 750px;
+    position: relative;
+    top: 5%;
+}
+
+.inner-container{
+    padding: 2rem 4rem;
+}
+
+.inner-container h1{
+    font-size: 2.5rem;
+}
+
+.inner-container p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.reg-btn{
+    color: var(--violet);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border: none;
+    margin: 10px 0;
+    padding: 15px 70px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px 2px hsl(257, 40%, 31%);
+}
+
+/* Footer Section */
+.footer{
+    position: relative;
+    padding: 0 4rem 0 0 ;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.social-logos{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.fbook{
+    padding: 0 3px;
+}
+
+
+/* Attrubutions */
+
+.attribution { 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(193, 52%, 67%); 
+}
+
+/* Media Queries */
+
+@media(max-width: 1320px){
+
+    body{
+        background-image: url(./images/bg-mobile.svg);
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-illustration{
+        width: 100%;
+        min-width: 200px;
+    }
+
+    .inner-container{
+        padding: 2rem 2rem;
+    }
+
+    .footer{
+        justify-content: center;
+        padding: 0;
+    }
+}
